@@ -80,18 +80,18 @@ body {
 }
 /* header */
 .wrapper {
-	max-width: 1128px;
-	padding: 0 10px;
-	margin: 0 auto;
-	height: 90px;
-}
-.head-login {
+	height: 90px;	
 	justify-content: space-between;
 	display: flex;
 }
-.empty {
-	height: 18px;
+.wrapper, .content, .subscribe-content, .transfer-content, .contacts-content, .blog-content, .recommend-content, .footer-content {
+	max-width: 1128px;
+	padding: 0 10px;
+	margin: 0 auto;
 }
+
+
+
 header {
 	background: #52B362;
 	position: fixed;
@@ -101,15 +101,24 @@ header {
 	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
 	z-index: 1;
 }
-
+.head-left {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
 .header-wrapper, .login {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
+.login-language {
+	display: inline-flex;
+	margin-left: auto;
+}
 
 .head-right {
 	display: flex;
+	text-align: right;
 }
 .header_logo-pic {
 	top: 15px;
@@ -137,10 +146,14 @@ header {
 	padding-left: 10px;
 	padding-top: 3px;
 }
+
 .login li, .language li{
 	margin-right: 10px;
 }
+.language li:last-child {
+	margin-right: 0;
 
+}
 .language :hover {
 	color: #FFDD00;
 	transition-duration: 0.4s;
@@ -155,11 +168,9 @@ header {
 .header-item:last-child{
 	margin-right: 0;
 }
-.header-item:hover {
-	text-decoration: underline;
-	font-weight: bold;
-	font-size: 115%;
-	transition-duration: 0.4s;
+.header-item a:hover {
+    border-bottom: 2px solid #FFDD00;
+    transition-duration: 0.4s;
 }
 .tel-list {
 	position: relative;
@@ -173,7 +184,7 @@ header {
 .city-item select {
 	background: inherit;
 	color: #fff;
-	font-size: 16px;
+	font-size: 13px;
 	border: none;
 	font-family: 'Noto Sans', sans-serif;
 	cursor: pointer;
@@ -189,14 +200,20 @@ header {
 	text-decoration: none;
 	font-size: 16px;
 	display: inline-block;
+	height: 100%;
 } 
 nav {
 	margin-left: auto;
+	height: 58px;
+	align-items: center;
 }
-
+nav ul {
+	height: 100%;
+	align-items: center;
+}
 .telegram a{
 	position: absolute; 
-	top: 24px;
+	top: 20px;
 	height: 50px;
 	width: 174px;
 	border-radius: 50px;
@@ -234,19 +251,15 @@ nav {
 
 /* content section */
 
-.content {
+.container {
 	background: #48A357;
-	margin: 0 auto;
+}
+.currencies {
+	padding-top: 175px;
 }
 .currencies, .transfer {
-	padding-top: 175px;
 	display: flex;
 	justify-content: space-between;
-	max-width: 1108px;
-}
-.currencies-head {
-	max-width: 1108px;
-	margin: 0 auto;
 }
 
 .currencies-header {
@@ -290,16 +303,13 @@ nav {
 	margin-bottom: 6px;
 }
 
-.currencies-name.valuta, .currency {
-	width: 30%;
+.currencies-name.valuta {
 	padding-left: 24px;
 }
 .currencies-name.buy, .currencies-name.sales, .currency-buy, .currency-sale {
-	width: 25%;
 	text-align: left;
 }
 .currencies-name.day {
-	width: 15%;
 	justify-content:  flex-end;
 }
 
@@ -307,7 +317,7 @@ nav {
 	list-style: none;
     display: flex;
 	justify-content: space-between;
-	border-bottom: 2px solid #FBF79F;
+	border-bottom: 2px solid rgb(251,247,159,0.4);
 	height: 128px;
 	align-items: center;
 	padding: 20px 24px;
@@ -322,6 +332,12 @@ nav {
 .price-change {
 	height: 21px;
 	color: #FBF79F; 
+	display: flex;
+	align-items: center;
+}
+.arrow {
+	align-items: center;
+    margin-right: 10px;
 }
 .currency {
 	color: #FFDD00;
@@ -358,7 +374,7 @@ nav {
 
 .dynamics {
 	text-align: center;
-	color: #FFDD00;
+	color: rgb(251,247,159);
 	font-size: 14px;
 	align-items: center;
 	height: 21px;
@@ -384,25 +400,22 @@ a.currency {
 /* subscribe section */
 
 .subscribe {
-	height: 580px;
+	padding-top: 84px;
 	margin-top: 80px;
-	margin-bottom: 80px;
 	background-color: #fff;
 	background-image: none;
 }
 
 /*!!!!!!!!!!!!!*/
-.subscribe-content {
-	max-width: 1108px;
-	margin: 0 auto;
+.subscribe-content-list {
 	flex-wrap: wrap;
     align-items: center;
     display: flex;
+    justify-content: space-between;
 }
 .subscribe-head {
-	margin-bottom: 40px;
 	font-size: 48px;
-	width: 651px;
+	width: 60%;
 	color: #545454;
 }
 
@@ -411,7 +424,7 @@ a.currency {
 	max-width: 340px;
 }
  .telegram-btn li {
-	padding: 20px 0px;
+	padding: 10px 0px;
 	align-items: center;
 	text-transform: uppercase;
 }
@@ -425,7 +438,6 @@ a.currency {
 }
 
 .btn-telegram a{
-	line-height: 60px;
 	text-decoration: none;
 	color: #fff;
 	text-align: center;
@@ -436,7 +448,7 @@ a.currency {
 
 .subscribe-item input {
 	line-height: 60px;
-	max-width: 340px;
+	width: 100%;
 	font-size: 20px;
 	color: #999999;
 	border: 0;
@@ -460,23 +472,21 @@ a.currency {
 	background: #40914f;
 }
 
-.subscribe-right {
-	padding-top: 170px;
-	max-width: 50%;
-}
-.subscribe-right img {
-	max-width: 100%;
-	max-height: 100%;
+
+.subscribe-img {
+	max-width: 311px;
+	position: relative;
 }
 
 
 /* transfer-country */
 
+.transfer-content {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
 .transfer {
 	display: block;
-	margin: 0 auto;
-	max-width: 1108px;
-	padding-top: 0;
 }
 
 .transfer h2 {
@@ -502,10 +512,6 @@ a.currency {
 	margin-bottom: 45px;
 }
 
-.transfer-country {
-	max-width: 1108px;
-	margin: 0 auto;
-}
 
 .countries, .cities {
 	display: flex;
@@ -513,8 +519,12 @@ a.currency {
 	justify-content: space-between;
 }
 .country {
-	width: 359px;
+	width: 32%;
 	align-items: center;
+	border-left: 2px solid rgb(251,247,159,0.4);
+}
+.country:last-child{
+	border-right: 2px solid rgb(251,247,159,0.4); 
 }
 .country-name {
 	color: #FBF79F;
@@ -523,8 +533,8 @@ a.currency {
 	font-weight: bold;
 }
 
-.cn {
-	padding-right: 20px;
+.country-img {
+	margin-right: 20px;
 }
 .percent {
 	font-size: 60px;
@@ -536,21 +546,25 @@ a.currency {
 	padding-top: 18px;
 }
 .city {
-	width: 184px;
+	width: 16.6%;
 	align-items: center;
 	text-align: center;
-
+	border-left: 2px solid rgb(251,247,159,0.4);
+}
+.city:last-child{
+	border-right: 2px solid rgb(251,247,159,0.4); 
 }
 .city div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.city-name {
+.city__name {
 	font-size: 22px;
 	font-weight: bold;
 	color: #FBF79F;
 	height: 56px;
+	text-align: center;
 
 }
 .percent2 {
@@ -566,8 +580,7 @@ a.currency {
 }
 
 .tran-online {
-	width: 600px;
-	margin-bottom: 80px;
+	width: 50%;
 }
 .online {
 	color: #FFDD00;
@@ -577,13 +590,10 @@ a.currency {
 
 .contacts {
 	background: #52B362;
-	padding: 80px 0;
+	padding: 80px 10px;
 
 }
-.contacts-content {
-	max-width: 1108px;
-	margin: 0 auto;
-}
+
 .contacts-head {
 	display: flex;
 	justify-content: center;
@@ -627,7 +637,7 @@ a.currency {
 	margin-bottom: 6px;
 }
 .address {
-	width: 55%;
+	width: 58%;
 }
 .station {
 	font-size: 14px;
@@ -655,7 +665,6 @@ a.currency {
 .number a {
 	text-decoration: none;
 	color: #fff;
-	padding-left: 20px;
 }
 .number a:hover {
 	color: #FFDD00;
@@ -671,10 +680,7 @@ a.currency {
 	background: #edf6ef;
 	padding: 80px 0;
 }
-.blog-content {
-	max-width: 1108px;
-	margin: 0 auto;
-}
+
 .blog-head {
 	justify-content: space-between;
 	display: flex;
@@ -701,7 +707,6 @@ a.currency {
 	justify-content: space-between;
 }
 .post {
-	height: 405px;
 	width: 32%;
 	color: #000;
 	background: #fff;
@@ -749,7 +754,6 @@ a.currency {
 /* recommend */
 
 .recommend-content {
-	max-width: 1108px;
 	margin: 80px auto;
 }
 .recommend-head {
@@ -764,8 +768,6 @@ footer {
 	height: 100px;
 }
 .footer-content {
-	max-width: 1108px; 
-	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -790,4 +792,204 @@ footer {
 }
 .last a {
 	color: #FFDD00;
+}
+
+
+
+
+.menu-burger {
+	display: none;
+}
+
+@media screen and (max-width: 991px){
+	.menu-burger{
+		display: block;
+		position: relative;
+		width: 24px;
+		height: 20px;
+		top: 30px;
+		right: 10px;
+	}
+	.menu-burger span {
+		position: absolute;
+		background: #fff;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+
+	}
+	.menu-burger:before,
+	.menu-burger:after{
+		content: '';
+		background: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+	}
+	.menu-burger:before{
+		top: 0;
+	}
+	.menu-burger:after{
+		bottom: 0;
+	}
+	.login-language, .city-item, .header-nav, .tel-item {
+		display: none;
+	}
+	#menu__toggle {
+  		opacity: 0;
+	}
+
+	.social-networks {
+			opacity: 0;
+		}
+}
+
+
+
+
+@media screen and (max-width: 767px){
+		.wrapper, .content, .content, .subscribe-content, .transfer-content, .contacts-content, .blog-content, .recommend-content, .footer-content {
+			max-width: 550px;
+		}
+		.currencies-header {
+			font-size: 20px;
+		}
+		.currencies-check a {
+			height: 41px;
+			font-size: 11px;
+		}
+		.valuta {
+    		display: none;
+    	}
+    	.table-header>div{
+    		width: 33%;
+    	}
+    	.currencies-name {
+    		font-size: 9px;
+    	}
+    	.currency {
+    		font-size: 16px;
+    	}
+    	.price-currency, .price-sale {
+    		font-size: 28px;
+    	}
+    	.price-change {
+    		font-size: 12px;
+    		height: 14px;
+    	}
+    	.make-request {
+    		font-size: 11px;
+    	}
+    	.request {
+    		padding-left: 0;
+    		text-align: center;
+    	}
+    	.dynamics  {
+    		font-size: 12px;
+    	}
+    	.statistics {
+    		display: none;
+    		padding: 0 0 0 0;
+    	}
+    	.exchange-rate {
+    		padding: 0 0 0 0;
+    	}
+
+
+    	.subscribe-head {
+    		font-size: 20px;
+    	}
+    	.subscribe-content-list {
+    		display: block;
+    		text-align: center;
+    		justify-content: center;
+    	}
+    	.subscribe-left {
+    		width: 100%;
+    		text-align: center;
+    	}
+    	.subscribe-right {
+    		size: 50%;
+    	}
+
+
+
+
+
+
+    	.contacts-head span{
+    		font-size: 20px;
+    	}
+    	.address-head {
+    		font-size: 16px;
+    	}
+    	.contact {
+    		display: block;
+    	}
+
+    	.show-map {
+    		font-size: 12px;
+    	}
+
+    	.countries, .cities {
+    		flex-wrap: wrap;
+    	}
+
+    	.city {
+    		flex-wrap: wrap;
+    		width: 30%;
+    	}
+
+
+
+
+    	.tran-online {
+    		width: 100%
+    	}
+    	
+
+
+
+
+
+
+
+
+    	.blog-post {
+    		display: block;
+
+    	}
+
+    	.post {
+    		width: 100%;
+    		margin-bottom: 10px;
+    		padding-bottom: 15px;
+    	}
+
+}
+
+
+@media screen and (min-width: 767px){
+	.valuta {
+		width: 30%;
+	}
+	.currencies-name.buy, .currencies-name.sales, .currency-buy, .currency-sale {
+		width: 25%;
+	}
+	.day {
+		width: 15%;
+	}
+	.subscribe-left {
+		width: 50%;
+	}
+	.subscribe-right {
+		max-width: 50%;
+	}
+}
+@media screen and (max-width: 991px){
+		.wrapper, .content, .content, .subscribe-content, .transfer-content, .contacts-content, .blog-content, .recommend-content, .footer-content {
+			max-width: 750px;
+		}
 }
