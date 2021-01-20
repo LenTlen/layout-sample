@@ -353,6 +353,7 @@ nav ul {
 	text-decoration: none;
 	font-weight: 900;
 	font-size: 38px;
+	width: 50%;
 }
 .currency:hover {
 	text-decoration: underline;
@@ -402,9 +403,10 @@ nav ul {
   justify-content: left;
   width: 25%;
 }
-a.currency {
-	width: 30%;
+.currency-buy {
+	margin-left: 20px;
 }
+
 
 /* subscribe section */
 
@@ -809,15 +811,25 @@ footer {
 .menu-burger {
 	display: none;
 }
+.mobile-login{
+	display: none;
+}
 
-@media screen and (max-width: 991px){
+@media only screen and (max-width: 991px){
 	.menu-burger{
 		display: block;
 		position: relative;
 		width: 24px;
 		height: 20px;
-		top: 15px;
 		right: 10px;
+		opacity: 20;
+		z-index: 35;
+		cursor: pointer;
+	}
+
+	
+	.nav-list li{
+		display: block;
 	}
 	.menu-burger span {
 		position: absolute;
@@ -843,16 +855,106 @@ footer {
 	.menu-burger:after{
 		bottom: 0;
 	}
-	.login-language, .city-item, .header-nav, .tel-item, .telegram {
+	 .tel-item, .language, .telegram {
 		display: none;
 	}
-	#menu__toggle {
+	#toggle {
   		opacity: 0;
+  		width: 20px;
+  		height: 20px;
+  		cursor: pointer;
 	}
 
-	.social-networks {
-			opacity: 0;
-		}
+
+	
+	.login {
+		position: fixed;
+		top: 0;
+		padding: 19px 10px;
+		right: -260px;
+		width: 260px;
+		z-index: 10;
+		background: #52B362;
+	}
+	.nav-list {
+		position: fixed;
+		display: block;
+		top: -12px;
+		right: -260px;
+		width: 260px;
+		height: 100%;
+		background-color: #49a158;
+		padding-top: 70px;
+		overflow: scroll;
+
+	}
+	.city-logo {
+		display: none;
+	}
+	.header-nav li a {
+		text-transform: none;
+
+	}
+	 
+
+	
+	.header__item {
+		height: 50px;
+		padding-left: 20px;
+	}
+	.ln {
+		display: none;
+	}
+	.social-networks{
+		position: fixed;
+		bottom: 27px;
+		right: -260px;
+		width: 260px;
+		height: 50px;
+		padding: 10px 0 10px 10px;
+		background: #52B362;
+		z-index: 1;
+	}
+	.social {
+		height: 30px;
+		width: 30px;
+	}
+	.city-item {
+		position: fixed;
+		bottom: 0;
+		right: -260px;
+		padding-bottom: 10px;
+		width: 260px;
+		background: #52B362;
+		padding-left: 20px;
+		z-index: 80;
+	}
+
+	.nav-list.is-active, .social-networks.is-active, .login.is-active, .city-item.is-active{
+		right: 0;
+		transition-duration: 0.4s;
+	}
+	.container.is-active {
+		background: rgb(0,0,0,0.2);
+	}
+	.currencies-name {
+    	font-size: 11px;
+    	}
+    .currency {
+    	font-size: 22px;
+    	width: 50%;
+    	}
+    .price-currency, .price-sale {
+    	font-size: 34px;
+    	}
+    .price-change {
+    	font-size: 12px;
+    	height: 14px;
+    	}
+    .make-request {
+    	font-size: 14px;
+    	}
+
 }
 
 
@@ -862,7 +964,7 @@ footer {
 		.wrapper, .content, .content, .subscribe-content, .transfer-content, .contacts-content, .blog-content, .recommend-content, .footer-content {
 			max-width: 550px;
 		}
-
+		
 		/* head */
 		.header {
 			height: 58px;
@@ -907,8 +1009,9 @@ footer {
     	.currencies-name {
     		font-size: 9px;
     	}
-    	.currency {
-    		font-size: 16px;
+		.currency {
+	   		font-size: 16px;
+    		width: 50%;
     	}
     	.price-currency, .price-sale {
     		font-size: 28px;
@@ -1034,6 +1137,14 @@ footer {
 	}
 	.currencies-name.buy, .currencies-name.sales, .currency-buy, .currency-sale {
 		width: 25%;
+	}
+	.currency-container {
+		display: flex;
+		width: 55%;
+		align-items: center;
+	}
+	.currency-buy {
+    display: block;
 	}
 	.day {
 		width: 15%;

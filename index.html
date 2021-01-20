@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+
 	<header class="header">
 		<div class="wrapper">
 			<div class="head-left">
@@ -34,435 +36,445 @@
 
 
 			<div class="head-right">
-				<div class="menu-burger">
-					<input id="menu__toggle" type="checkbox" />
-					<label class="menu__btn" for="menu__toggle">
-						<span></span>
-					</label></div>
+			
+				<div class="head-right-content">
+					<div class="login-language">
+						<ul class="login">
+							<li class="enter-item"><a href="#">Вход</a></li>
+							<li class="enter-item"><img src="./img/logo/line.svg"></li>
+							<li class="enter-item"><a href="#">Регистрация</a></li>
+						</ul>
+						<ul class="language">
+							<li class="enter-item"><a href="#">UA</a></li>
+							<li class="enter-item"><a href="#">RU</a></li>
+						</ul>	
 
-					<div class="head-right-content">
-						<div class="login-language">
-							<ul class="login">
-								<li class="enter-item"><a href="#">Вход</a></li>
-								<li class="enter-item"><img src="./img/logo/line.svg"></li>
-								<li class="enter-item"><a href="#">Регистрация</a></li>
-							</ul>
-							<ul class="language">
-								<li class="enter-item"><a href="#">UA</a></li>
-								<li class="enter-item"><a href="#">RU</a></li>
-							</ul>	
-
-						</div>
+					</div>
 
 
-						<nav class="header-nav">	
+					<nav class="header-nav">
+						<div class="menu-burger">
+							<input id="toggle" type="checkbox" />
+							<label class="menu__btn" for="toggle">
+								<span></span>
+							</label>
+						</div>	
 							<ul class="nav-list">
 								<li class="header__item"><a href="#currencies">Курсы</a></li>
 								<li class="header__item"><a href="#subscribe">Следить</a></li>
 								<li class="header__item"><a href="#transfer-country">Переводы</a></li><li class="header__item"><a href="#contacts">Контакты</a></li>
 							</ul>
-						</nav>
-					</div>
-
-				
+					</nav>
+				</div>
 			</div>
-		</header>
+		</div>
+	</header>
 		<section class="container">
-			<div class="content">
-				<div class="currencies-head">
-					<div class="currencies">
-						<div class="currencies-header">Курсы Валют</div>
-						<ul class="currencies-check is-active">
-							<li class="header-btn"><a href="#"><b>Опт</b><br />от 500 $</a></li>
-							<li class="header-btn"><a href="#"><b>Розница</b><br />от 1 $</a></li>
-						</ul>
-					</div>
-					<div class="table-header">
-						<div class="currencies-name valuta">Валюта</div>
-						<div class="currencies-name buy"> Покупка (ОПТ)</div>
-						<div class="currencies-name sales">Продажа (ОПТ)</div>
-						<div class="currencies-name day"><span>17 мая | 18:20</span></div>
-					</div>
+				<div class="content">
 
-
-					<div class="exchange-rate">
-
-						<a href="#" class="currency">CNY/UAH</a>
-						<div class="currency-buy">
-							<div class="price-currency">3.75</div>
-							<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
+					<div class="currencies-head">
+						<div class="currencies">
+							<div class="currencies-header">Курсы Валют</div>
+							<ul class="currencies-check is-active">
+								<li class="header-btn"><a href="#"><b>Опт</b><br />от 500 $</a></li>
+								<li class="header-btn"><a href="#"><b>Розница</b><br />от 1 $</a></li>
+							</ul>
 						</div>
-						<div class="currency-sale">
-							<div class="price-sale">4.05</div>
-							<div class="price-change"> </div>
+						<div class="table-header">
+							<div class="currencies-name valuta">Валюта</div>
+							<div class="currencies-name buy"> Покупка (ОПТ)</div>
+							<div class="currencies-name sales">Продажа (ОПТ)</div>
+							<div class="currencies-name day"><span>17 мая | 18:20</span></div>
 						</div>
-						<div class="request">
-							<a href="#" class="make-request">Создать заявку</a>
-							<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
-						</div>
-					</div>
 
 
-					<div class="exchange-rate">
+						<div class="exchange-rate">
+							<div class="currency-container">
+								<a href="#" class="currency">CNY/UAH</a>
 
-						<a href="#" class="currency">USD/CNY</a>
-						<div class="currency-buy">
-							<div class="price-currency">6.73</div>
-							<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
-						</div>
-						<div class="currency-sale">
-							<div class="price-sale">6.76</div>
-							<div class="price-change"> </div>
-						</div>
-						<div class="request">
-							<a href="#" class="make-request">Создать заявку</a>
-							<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
-						</div>
-					</div>
-
-
-
-					<div class="exchange-rate">
-
-						<a href="#" class="currency">USD/UAH</a>
-						<div class="currency-buy">
-							<div class="price-currency">26.32</div>
-							<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
-						</div>
-						<div class="currency-sale">
-							<div class="price-sale">26.38</div>
-							<div class="price-change"> </div>
-						</div>
-						<div class="request">
-							<a href="#" class="make-request">Создать заявку</a>
-							<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
-						</div>
-					</div>
+								<div class="currency-buy">
+									<div class="price-currency">3.75</div>
+									<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
+								</div></div>
+								<div class="currency-sale">
+									<div class="price-sale">4.05</div>
+									<div class="price-change"> </div>
+								</div>
+								<div class="request">
+									<a href="#" class="make-request">Создать заявку</a>
+									<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
+								</div>
+							</div>
 
 
-					<div class="exchange-rate">
+							<div class="exchange-rate">
 
-						<a href="#" class="currency">EUR/UAH</a>
-						<div class="currency-buy">
-							<div class="price-currency">29.47</div>
-							<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
-						</div>
-						<div class="currency-sale">
-							<div class="price-sale">29.55</div>
-							<div class="price-change"> </div>
-						</div>
-						<div class="request">
-							<a href="#" class="make-request">Создать заявку</a>
-							<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
-						</div>
-					</div>
+								<a href="#" class="currency">USD/CNY</a>
+								<div class="currency-buy">
+									<div class="price-currency">6.73</div>
+									<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
+								</div>
+								<div class="currency-sale">
+									<div class="price-sale">6.76</div>
+									<div class="price-change"> </div>
+								</div>
+								<div class="request">
+									<a href="#" class="make-request">Создать заявку</a>
+									<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
+								</div>
+							</div>
 
 
 
-					<div class="exchange-rate">
+							<div class="exchange-rate">
 
-						<a href="#" class="currency">RUR/UAH</a>
-						<div class="currency-buy">
-							<div class="price-currency">0.402</div>
-							<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
-						</div>
-						<div class="currency-sale">
-							<div class="price-sale">0.404</div>
-							<div class="price-change"> </div>
-						</div>
-						<div class="request">
-							<a href="#" class="make-request">Создать заявку</a>
-							<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
-						</div>
-					</div>
-
-
-
-					<div class="exchange-rate">
-
-						<a href="#" class="currency">USD/RUR</a>
-						<div class="currency-buy">
-							<div class="price-currency">65.0</div>
-							<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
-						</div>
-						<div class="currency-sale">
-							<div class="price-sale">65.45</div>
-							<div class="price-change"> </div>
-						</div>
-						<div class="request">
-							<a href="#" class="make-request">Создать заявку</a>
-							<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
-						</div>
-					</div>
+								<a href="#" class="currency">USD/UAH</a>
+								<div class="currency-buy">
+									<div class="price-currency">26.32</div>
+									<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
+								</div>
+								<div class="currency-sale">
+									<div class="price-sale">26.38</div>
+									<div class="price-change"> </div>
+								</div>
+								<div class="request">
+									<a href="#" class="make-request">Создать заявку</a>
+									<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
+								</div>
+							</div>
 
 
-					<div class="exchange-rate">
+							<div class="exchange-rate">
 
-						<a href="#" class="currency">GBP/UAH</a>
-						<div class="currency-buy">
-							<div class="price-currency">33.55</div>
-							<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
-						</div>
-						<div class="currency-sale">
-							<div class="price-sale">33.93</div>
-							<div class="price-change"> </div>
-						</div>
-						<div class="request">
-							<a href="#" class="make-request">Создать заявку</a>
-							<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
-						</div>
-					</div>
-
-
-					<div class="exchange-rate">
-
-						<a href="#" class="currency">PLN/UAH</a>
-						<div class="currency-buy">
-							<div class="price-currency">6.72</div>
-							<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
-						</div>
-						<div class="currency-sale">
-							<div class="price-sale">6.84</div>
-							<div class="price-change"> </div>
-						</div>
-						<div class="request">
-							<a href="#" class="make-request">Создать заявку</a>
-							<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+								<a href="#" class="currency">EUR/UAH</a>
+								<div class="currency-buy">
+									<div class="price-currency">29.47</div>
+									<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
+								</div>
+								<div class="currency-sale">
+									<div class="price-sale">29.55</div>
+									<div class="price-change"> </div>
+								</div>
+								<div class="request">
+									<a href="#" class="make-request">Создать заявку</a>
+									<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
+								</div>
+							</div>
 
 
-		<section class="subscribe">
 
-			<div class="subscribe-content">
-				<div class="subscribe-head">Eжедневная информация об изменении курса</div>
-				<div class="subscribe-content-list">
+							<div class="exchange-rate">
 
-					<div class="subscribe-left">
-						<ul class="telegram-btn">
-							<li class="btn-telegram"><a href="#" class="telegram2"><img src="./img/tg2.svg" alt="" class="tg">Подпишись на наш "Telegram"</a></li>
-							<li class="subscribe-item"><input placeholder="Ваш электронный адрес"></li>
-							<li class="subscribe-item"><button>Пописаться на рассылку</button></li>
-						</ul>
-					</div>
-
-					<div class="subscribe-right">
-						<img src="./img/sub-pic.png" alt="" class="subscribe-img">
-					</div>	
-				</div>
-			</div>
-		</section>
-
-		<section class="transfer-country">
-			<div class="transfer-content">
-				<article class="transfer">
-					<h2>Переводы</h2>
-					<div class="tran-head">Узнать подробности и оформить перевод можно
-					в любом из наших отделений по контактам ниже</div>
-
-					<h3>Переводы за границу</h3>
-					<div class="text-transfer">Стоимость платежного поручения</div>
-				</article>
-
-				<div class="countries">
-
-					<div class="country">
-						<div class="country-name">КИТАЙ <img src="./img/country-3.svg" alt="" class="country-img"></div>
-						<div class="percent">0.5%</div>
-					</div>
-					<div class="country">
-						<div class="country-name">ЕВРОПА <img src="./img/country-1.svg" alt="" class="country-img"></div>
-						<div class="percent">0.5%</div>
-					</div>
-					<div class="country">
-						<div class="country-name">ТУРЦИЯ <img src="./img/country-2.svg" alt="" class="country-img"></div>
-						<div class="percent">0.5%</div>
-					</div>
-				</div>
-
-				<article class="transfer">
-					<h3>Переводы по Украине</h3>
-					<div class="text-transfer">Стоимость платежного поручения</div>
-				</article>
-
-				<div class="cities">
-					<div class="city">
-						<div class="city__name">КИЕВ</div>
-						<div class="percent2">0.3%</div>
-					</div>
-					<div class="city">
-						<div class="city__name">ХАРЬКОВ</div>
-						<div class="percent2">0.3%</div>
-					</div>
-					<div class="city">
-						<div class="city__name">СУММЫ</div>
-						<div class="percent2">0.3%</div>
-					</div>
-					<div class="city">
-						<div class="city__name">ОДЕССА</div>
-						<div class="percent2">0.3%</div>
-					</div>
-					<div class="city">
-						<div class="city__name">НИКОЛАЕВ</div>
-						<div class="percent2">0.3%</div>
-					</div>
-					<div class="city">
-						<div class="city__name">ДРУГИЕ</div>
-						<div class="percent2-last">от 0.4 %<br>
-						до 0.8 %</div>
-					</div>
-				</div>
+								<a href="#" class="currency">RUR/UAH</a>
+								<div class="currency-buy">
+									<div class="price-currency">0.402</div>
+									<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
+								</div>
+								<div class="currency-sale">
+									<div class="price-sale">0.404</div>
+									<div class="price-change"> </div>
+								</div>
+								<div class="request">
+									<a href="#" class="make-request">Создать заявку</a>
+									<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
+								</div>
+							</div>
 
 
-				<article class="transfer">
-					<h3>Онлайн обмен</h3>
-					<div class="tran-online">Уважаемые клиенты! Воспользовавшись услугами наших партнеров <a href="https://aexchanger.com" class="online">https://aexchanger.com</a>, Вы можете быстро и надежно совершить обмен Ваших электронных денег, вывести вашу валюту на Приват, и в наличные с минимальными процентами. https://aexchanger.com - готов всегда идти на встречу клиенту</div>
-				</article>
-			</div>
-		</section>
 
-		<section class="contacts">
-			<div class="contacts-content">
-				<div class="contacts-head">
-					<span>Контакты обменки</span>
-					<button class="show-map"><img src="./img/mapmap.svg" alt="Показать на карте" class="mapmap">Показать на карте</button>
-				</div>
+							<div class="exchange-rate">
 
-				<div class="contact-info">
-					<div class="contact">
-						<div class="address">
-							<div class="address-head">пр-т Юбилейный, 7а (бывш. пр-т 50 лет ВЛКСМ 7а)</div>
-							<div class="station">м. Академика Барабашова</div>
-							<a href="#" class="onmap"><img src="./img/map.svg" alt="" class="map">На карте</a>
-						</div>
-						<div class="number"><a href="tel: +380503088891">050-308-88-91</a></div>
-						<div class="worktime">Пн-Пт 8:00 - 17:00<br>Сб-Вс 8:00 - 16:00</div>
-					</div>
-
-					<div class="contact">
-						<div class="address">
-							<div class="address-head">пер. Амурский, 1Б (на входе в ТЦ «Интер»)</div>
-							<div class="station">м. Академика Барабашова</div>
-							<a href="#" class="onmap"><img src="./img/map.svg" alt="" class="map">На карте</a>
-						</div>
-						<div class="number"><a href="tel: +380503077510">050-307-75-10</a><br><a href="tel: +380504777810">050-477-78-10</a></div>
-						<div class="worktime">Ежедневно 8:00 - 15:00</div>
-					</div>
-
-					<div class="contact">
-						<div class="address">
-							<div class="address-head">ул. Раевской, 17 (хозряды)</div>
-							<div class="station">м. Академика Барабашова</div>
-							<a href="#" class="onmap"><img src="./img/map.svg" alt="" class="map">На карте</a>
-						</div>
-						<div class="number"><a href="tel: +380503033949">050-303-39-49</a></div>
-						<div class="worktime">Ежедневно 8:00 - 15:00</div>
-					</div>
-
-					<div class="contact">
-						<div class="address">
-							<div class="address-head">ул. Барабашово, 6 (круг троллейбуса)</div>
-							<div class="station">м. Академика Барабашова</div>
-							<a href="#" class="onmap"><img src="./img/map.svg" alt="" class="map">На карте</a>
-						</div>
-						<div class="number"><a href="tel: +380504777810">050-477-78-10</a></div>
-						<div class="worktime">Ежедневно 8:00 - 15:00</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
+								<a href="#" class="currency">USD/RUR</a>
+								<div class="currency-buy">
+									<div class="price-currency">65.0</div>
+									<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
+								</div>
+								<div class="currency-sale">
+									<div class="price-sale">65.45</div>
+									<div class="price-change"> </div>
+								</div>
+								<div class="request">
+									<a href="#" class="make-request">Создать заявку</a>
+									<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
+								</div>
+							</div>
 
 
-		<section class="blog">
-			<div class="blog-content">
-				<div class="blog-head">
-					<span>Блог</span>
-					<button class="blog-btn">Читать все статьи</button>
-				</div>
-				<div class="blog-post row1">
-					<div class="post">
-						<a href="#" class="text-post"><img src="./img/post1.png" alt="" class="post1"></a> 
-						<time datetime="2019/06/16" class="date">16/06/19</time>
-						<div class="post-text"><a href="#" class="text-post">Home. Founded in 2012 as an XVisionary, our marketing consultancy became the industry leader when it comes to strate ... marketing planning, outsourced marketing (dedicated remote marketing services), marketing automation, technologies integration & digital transformation.</a></div>
-					</div>
-					<div class="post">
-						<a href="#" class="text-post"><img src="./img/post2.png" alt="" class="post1"></a>
-						<time datetime="2019/06/17" class="date">17/06/19</time>
-						<div class="post-text"><a href="#" class="text-post">About.<br><br>We provide marketing consulting services all around the globe. Founded back in 2012, our Marketing Consultancy became the industry leader when it comes to strategic marketing planning, inbound marketing strategies, and search engine optimization campaigns.
-						</a></div>
-					</div>
-					<div class="post">
-						<a href="#" class="text-post"><img src="./img/post3.png" alt="" class="post1"></a>
-						<time datetime="2019/06/18" class="date">18/06/19</time>
-						<div class="post-text">
-							<a href="#" class="text-post">
-							Marketing services. Comprehensive SEO solutions by the leading SEO company will bring your business to the top of any search engine: Google, Bing, Baidu, Yandex, app stores, local maps and listing services.</a>
+							<div class="exchange-rate">
+
+								<a href="#" class="currency">GBP/UAH</a>
+								<div class="currency-buy">
+									<div class="price-currency">33.55</div>
+									<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
+								</div>
+								<div class="currency-sale">
+									<div class="price-sale">33.93</div>
+									<div class="price-change"> </div>
+								</div>
+								<div class="request">
+									<a href="#" class="make-request">Создать заявку</a>
+									<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
+								</div>
+							</div>
+
+
+							<div class="exchange-rate">
+
+								<a href="#" class="currency">PLN/UAH</a>
+								<div class="currency-buy">
+									<div class="price-currency">6.72</div>
+									<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
+								</div>
+								<div class="currency-sale">
+									<div class="price-sale">6.84</div>
+									<div class="price-change"> </div>
+								</div>
+								<div class="request">
+									<a href="#" class="make-request">Создать заявку</a>
+									<a href="#" class="dynamics"><img src="./img/statistics.svg" alt="" class="statistics"><span class="text-stat">Показать динамику</span></a>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="blog-post row2">
-					<div class="post">
-						<a href="#" class="text-post"><img src="./img/post4.png" alt="" class="post1"></a> 
-						<time datetime="2019/06/19" class="date">19/06/19</time>
-						<div class="post-text"><a href="#" class="text-post">Advertising. XVisionary is a certified company in digital advertising & data intelligence. We develop advertising strategies, media planning and execute optimized campaigns for international companies of various sizes.</a>
+				</section>
+
+
+				<section class="subscribe">
+
+					<div class="subscribe-content">
+						<div class="subscribe-head">Eжедневная информация об изменении курса</div>
+						<div class="subscribe-content-list">
+
+							<div class="subscribe-left">
+								<ul class="telegram-btn">
+									<li class="btn-telegram"><a href="#" class="telegram2"><img src="./img/tg2.svg" alt="" class="tg">Подпишись на наш "Telegram"</a></li>
+									<li class="subscribe-item"><input placeholder="Ваш электронный адрес"></li>
+									<li class="subscribe-item"><button>Пописаться на рассылку</button></li>
+								</ul>
+							</div>
+
+							<div class="subscribe-right">
+								<img src="./img/sub-pic.png" alt="" class="subscribe-img">
+							</div>	
 						</div>
 					</div>
-					<div class="post">
-						<a href="#" class="text-post"><img src="./img/post5.png" alt="" class="post1"></a>
-						<time datetime="2019/06/20" class="date">20/06/19</time>
-						<div class="post-text"><a href="#" class="text-post">About.<br><br>SMM. Social media are becoming increasingly relevant, as today's communication is increasingly taking place over these. Social media distribution is fast and successful ... so why not use it effectively? These not only enable up-to-date, simple and up-to-date communication, but also an active interaction with customers, prospects, and partners.</a>
+				</section>
+
+				<section class="transfer-country">
+					<div class="transfer-content">
+						<article class="transfer">
+							<h2>Переводы</h2>
+							<div class="tran-head">Узнать подробности и оформить перевод можно
+							в любом из наших отделений по контактам ниже</div>
+
+							<h3>Переводы за границу</h3>
+							<div class="text-transfer">Стоимость платежного поручения</div>
+						</article>
+
+						<div class="countries">
+
+							<div class="country">
+								<div class="country-name">КИТАЙ <img src="./img/country-3.svg" alt="" class="country-img"></div>
+								<div class="percent">0.5%</div>
+							</div>
+							<div class="country">
+								<div class="country-name">ЕВРОПА <img src="./img/country-1.svg" alt="" class="country-img"></div>
+								<div class="percent">0.5%</div>
+							</div>
+							<div class="country">
+								<div class="country-name">ТУРЦИЯ <img src="./img/country-2.svg" alt="" class="country-img"></div>
+								<div class="percent">0.5%</div>
+							</div>
+						</div>
+
+						<article class="transfer">
+							<h3>Переводы по Украине</h3>
+							<div class="text-transfer">Стоимость платежного поручения</div>
+						</article>
+
+						<div class="cities">
+							<div class="city">
+								<div class="city__name">КИЕВ</div>
+								<div class="percent2">0.3%</div>
+							</div>
+							<div class="city">
+								<div class="city__name">ХАРЬКОВ</div>
+								<div class="percent2">0.3%</div>
+							</div>
+							<div class="city">
+								<div class="city__name">СУММЫ</div>
+								<div class="percent2">0.3%</div>
+							</div>
+							<div class="city">
+								<div class="city__name">ОДЕССА</div>
+								<div class="percent2">0.3%</div>
+							</div>
+							<div class="city">
+								<div class="city__name">НИКОЛАЕВ</div>
+								<div class="percent2">0.3%</div>
+							</div>
+							<div class="city">
+								<div class="city__name">ДРУГИЕ</div>
+								<div class="percent2-last">от 0.4 %<br>
+								до 0.8 %</div>
+							</div>
+						</div>
+
+
+						<article class="transfer">
+							<h3>Онлайн обмен</h3>
+							<div class="tran-online">Уважаемые клиенты! Воспользовавшись услугами наших партнеров <a href="https://aexchanger.com" class="online">https://aexchanger.com</a>, Вы можете быстро и надежно совершить обмен Ваших электронных денег, вывести вашу валюту на Приват, и в наличные с минимальными процентами. https://aexchanger.com - готов всегда идти на встречу клиенту</div>
+						</article>
+					</div>
+				</section>
+
+				<section class="contacts">
+					<div class="contacts-content">
+						<div class="contacts-head">
+							<span>Контакты обменки</span>
+							<button class="show-map"><img src="./img/mapmap.svg" alt="Показать на карте" class="mapmap">Показать на карте</button>
+						</div>
+
+						<div class="contact-info">
+							<div class="contact">
+								<div class="address">
+									<div class="address-head">пр-т Юбилейный, 7а (бывш. пр-т 50 лет ВЛКСМ 7а)</div>
+									<div class="station">м. Академика Барабашова</div>
+									<a href="#" class="onmap"><img src="./img/map.svg" alt="" class="map">На карте</a>
+								</div>
+								<div class="number"><a href="tel: +380503088891">050-308-88-91</a></div>
+								<div class="worktime">Пн-Пт 8:00 - 17:00<br>Сб-Вс 8:00 - 16:00</div>
+							</div>
+
+							<div class="contact">
+								<div class="address">
+									<div class="address-head">пер. Амурский, 1Б (на входе в ТЦ «Интер»)</div>
+									<div class="station">м. Академика Барабашова</div>
+									<a href="#" class="onmap"><img src="./img/map.svg" alt="" class="map">На карте</a>
+								</div>
+								<div class="number"><a href="tel: +380503077510">050-307-75-10</a><br><a href="tel: +380504777810">050-477-78-10</a></div>
+								<div class="worktime">Ежедневно 8:00 - 15:00</div>
+							</div>
+
+							<div class="contact">
+								<div class="address">
+									<div class="address-head">ул. Раевской, 17 (хозряды)</div>
+									<div class="station">м. Академика Барабашова</div>
+									<a href="#" class="onmap"><img src="./img/map.svg" alt="" class="map">На карте</a>
+								</div>
+								<div class="number"><a href="tel: +380503033949">050-303-39-49</a></div>
+								<div class="worktime">Ежедневно 8:00 - 15:00</div>
+							</div>
+
+							<div class="contact">
+								<div class="address">
+									<div class="address-head">ул. Барабашово, 6 (круг троллейбуса)</div>
+									<div class="station">м. Академика Барабашова</div>
+									<a href="#" class="onmap"><img src="./img/map.svg" alt="" class="map">На карте</a>
+								</div>
+								<div class="number"><a href="tel: +380504777810">050-477-78-10</a></div>
+								<div class="worktime">Ежедневно 8:00 - 15:00</div>
+							</div>
+
 						</div>
 					</div>
-					<div class="post">
-						<a href="#" class="text-post"><img src="./img/post6.png" alt="" class="post1"></a>
-						<time datetime="21/06/19" class="date">21/06/19</time>
-						<div class="post-text">
-							<a href="#" class="text-post">
-							Outsource Marketing. XVisionary provides marketing outsourcing to the startups and enterprises by a full-stack outsourced marketing department, also known as the on-demand marketing team, that acts as a client's advocate in marketing.</a>
+				</section>
+
+
+				<section class="blog">
+					<div class="blog-content">
+						<div class="blog-head">
+							<span>Блог</span>
+							<button class="blog-btn">Читать все статьи</button>
+						</div>
+						<div class="blog-post row1">
+							<div class="post">
+								<a href="#" class="text-post"><img src="./img/post1.png" alt="" class="post1"></a> 
+								<time datetime="2019/06/16" class="date">16/06/19</time>
+								<div class="post-text"><a href="#" class="text-post">Home. Founded in 2012 as an XVisionary, our marketing consultancy became the industry leader when it comes to strate ... marketing planning, outsourced marketing (dedicated remote marketing services), marketing automation, technologies integration & digital transformation.</a></div>
+							</div>
+							<div class="post">
+								<a href="#" class="text-post"><img src="./img/post2.png" alt="" class="post1"></a>
+								<time datetime="2019/06/17" class="date">17/06/19</time>
+								<div class="post-text"><a href="#" class="text-post">About.<br><br>We provide marketing consulting services all around the globe. Founded back in 2012, our Marketing Consultancy became the industry leader when it comes to strategic marketing planning, inbound marketing strategies, and search engine optimization campaigns.
+								</a></div>
+							</div>
+							<div class="post">
+								<a href="#" class="text-post"><img src="./img/post3.png" alt="" class="post1"></a>
+								<time datetime="2019/06/18" class="date">18/06/19</time>
+								<div class="post-text">
+									<a href="#" class="text-post">
+									Marketing services. Comprehensive SEO solutions by the leading SEO company will bring your business to the top of any search engine: Google, Bing, Baidu, Yandex, app stores, local maps and listing services.</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-post row2">
+							<div class="post">
+								<a href="#" class="text-post"><img src="./img/post4.png" alt="" class="post1"></a> 
+								<time datetime="2019/06/19" class="date">19/06/19</time>
+								<div class="post-text"><a href="#" class="text-post">Advertising. XVisionary is a certified company in digital advertising & data intelligence. We develop advertising strategies, media planning and execute optimized campaigns for international companies of various sizes.</a>
+								</div>
+							</div>
+							<div class="post">
+								<a href="#" class="text-post"><img src="./img/post5.png" alt="" class="post1"></a>
+								<time datetime="2019/06/20" class="date">20/06/19</time>
+								<div class="post-text"><a href="#" class="text-post">About.<br><br>SMM. Social media are becoming increasingly relevant, as today's communication is increasingly taking place over these. Social media distribution is fast and successful ... so why not use it effectively? These not only enable up-to-date, simple and up-to-date communication, but also an active interaction with customers, prospects, and partners.</a>
+								</div>
+							</div>
+							<div class="post">
+								<a href="#" class="text-post"><img src="./img/post6.png" alt="" class="post1"></a>
+								<time datetime="21/06/19" class="date">21/06/19</time>
+								<div class="post-text">
+									<a href="#" class="text-post">
+									Outsource Marketing. XVisionary provides marketing outsourcing to the startups and enterprises by a full-stack outsourced marketing department, also known as the on-demand marketing team, that acts as a client's advocate in marketing.</a>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
+				</section>
 
-		<section class="recommend">
-			<div class="recommend-content">
-				<div class="recommend-head">
-					Как выбрать правильный обменник в Харькове
-				</div>
-				<div class="recommend-text">
-					<p>Найти качественныйобменник, не так-то просто. Особенно это касается поисков  пункта обмена иностранной валюты в Харькове, Киеве, Одессе. Столь больших мегаполисах, что их даже не возможно обойти за несколько дней. Нет, ну вы конечно же можете испытать свою удачу, в пеших поисках обменника, предлагающего самую выгодную цену, но единственный результат, который вы будете иметь – это адскую боль в ногах к концу прогулки такого характера.</p><br>
+				<section class="recommend">
+					<div class="recommend-content">
+						<div class="recommend-head">
+							Как выбрать правильный обменник в Харькове
+						</div>
+						<div class="recommend-text">
+							<p>Найти качественныйобменник, не так-то просто. Особенно это касается поисков  пункта обмена иностранной валюты в Харькове, Киеве, Одессе. Столь больших мегаполисах, что их даже не возможно обойти за несколько дней. Нет, ну вы конечно же можете испытать свою удачу, в пеших поисках обменника, предлагающего самую выгодную цену, но единственный результат, который вы будете иметь – это адскую боль в ногах к концу прогулки такого характера.</p><br>
 
-					<p>Намного проще, и легче искать обменный пункт при помощи всемирной паутины. Для этого вам необходимо всего лишь открыть браузер, и набить в поисковой строке: “Обменка Харьков”. После того, как вы это сделаете, вы будете ошарашены от результата, ведь вашему вниманию представиться 1000 сайтов, предлагающих свои услуге в обмене валюты. Это ведь прекрасно, скажете вы. Нет, и еще раз нет! Не стоит бросаться с головой в объятия первого попавшегося сайта! При нынешнем порядке вещей, большинство этих сайтов являются пустышками, и существуют лишь с одной целью: получение от вас максимального количества денежных средств, с нулевой отдачей. Особенно это касается сайтов, которые предлагают безналичные переводы.</p><br>
+							<p>Намного проще, и легче искать обменный пункт при помощи всемирной паутины. Для этого вам необходимо всего лишь открыть браузер, и набить в поисковой строке: “Обменка Харьков”. После того, как вы это сделаете, вы будете ошарашены от результата, ведь вашему вниманию представиться 1000 сайтов, предлагающих свои услуге в обмене валюты. Это ведь прекрасно, скажете вы. Нет, и еще раз нет! Не стоит бросаться с головой в объятия первого попавшегося сайта! При нынешнем порядке вещей, большинство этих сайтов являются пустышками, и существуют лишь с одной целью: получение от вас максимального количества денежных средств, с нулевой отдачей. Особенно это касается сайтов, которые предлагают безналичные переводы.</p><br>
 
-					<p>Не стоит в панике рвать на себе волосы. Для того, чтобы не допустить оплошности, вам необходимо всего лишь обратить внимание на несколько нюансов: наличие отзывов об этом сайте и обменнике (желательно, чтоб большинство было позитивных), наличие документации, и реально существующих адресов и контактных номеров. И чтобы максимально облегчить вам поиск данного сайта, мы хотим взять на себя ответственность и порекомендовать наш сервис, который отвечает всем вышеперечисленным требованиям.  У нас на сайте можно легко обменять евро на доллар по выгодному курсу.</p>
-				</div>
-			</div>
-
-		</section>
-
-		<footer>
-			<div class="footer-content">
-				<div class="foot-left">© KIT GROUP 2019</div>
-				<div class="foot-right">
-					<div class="social-networks">
-						<a href="#" class="social vb"><img src="./img/viber.svg" alt="Viber" class="vb"></a>
-						<a href="#" class="social telega"><img src="./img/tg.png" alt="Telegram" class="telega"></a>
-						<a href="#" class="social fb"><img src="./img/fb.svg" alt="Facebook" class="fb"></a>
-						<a href="#" class="social ig"><img src="./img/ig.svg" alt="Instagram" class="ig"></a>
-						<a href="#" class="social vk"><img src="./img/vk.svg" alt="VK" class="vk"></a>
-						<a href="#" class="social tw"><img src="./img/twitter.svg" alt="Twitter" class="tw"></a>
-						<a href="#" class="social in"><img src="./img/in.svg" alt="Linkedin" class="ln"></a>
-
+							<p>Не стоит в панике рвать на себе волосы. Для того, чтобы не допустить оплошности, вам необходимо всего лишь обратить внимание на несколько нюансов: наличие отзывов об этом сайте и обменнике (желательно, чтоб большинство было позитивных), наличие документации, и реально существующих адресов и контактных номеров. И чтобы максимально облегчить вам поиск данного сайта, мы хотим взять на себя ответственность и порекомендовать наш сервис, который отвечает всем вышеперечисленным требованиям.  У нас на сайте можно легко обменять евро на доллар по выгодному курсу.</p>
+						</div>
 					</div>
-					<div class="last">Создание сайта <a href="wu.ua">wu.ua</a></div>
-				</div>
-			</div>
-		</footer>
 
-	</body>
-	</html>
+				</section>
+
+				<footer>
+					<div class="footer-content">
+						<div class="foot-left">© KIT GROUP 2019</div>
+						<div class="foot-right">
+							<div class="social-networks">
+								<a href="#" class="social vb"><img src="./img/viber.svg" alt="Viber" class="vb"></a>
+								<a href="#" class="social telega"><img src="./img/tg.png" alt="Telegram" class="telega"></a>
+								<a href="#" class="social fb"><img src="./img/fb.svg" alt="Facebook" class="fb"></a>
+								<a href="#" class="social ig"><img src="./img/ig.svg" alt="Instagram" class="ig"></a>
+								<a href="#" class="social vk"><img src="./img/vk.svg" alt="VK" class="vk"></a>
+								<a href="#" class="social tw"><img src="./img/twitter.svg" alt="Twitter" class="tw"></a>
+								<a href="#" class="social in"><img src="./img/in.svg" alt="Linkedin" class="ln"></a>
+
+							</div>
+							<div class="last">Создание сайта <a href="wu.ua">wu.ua</a></div>
+						</div>
+					</div>
+				</footer>
+
+			</body>
+			<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$(".menu-burger").click(function(){
+						$(".menu-burger,.nav-list,.social-networks,.login,.city-item,.container").toggleClass("is-active");
+					});
+					});
+			</script>
+			</html>
