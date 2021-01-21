@@ -296,7 +296,7 @@ nav ul {
     display:flex;  
     background: rgb(0,0,0,0.2);
     border-radius: 80.5556px;
-    height: 50px;
+    height: 60px;
     align-items: center;
     width: 260px;
     justify-content: center;
@@ -990,12 +990,14 @@ footer {
 			font-size: 20px;
 		}
 		.currencies-check a {
-			height: 41px;
+			padding: 5px 0;
+			height: 34px;
 			font-size: 11px;
 			width: 81px;
 		}
 		.currencies-check {
 			width: 179px;
+			height: 41px;
 			justify-content: center;
 		}
 		.valuta {
