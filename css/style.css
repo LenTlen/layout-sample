@@ -385,6 +385,9 @@ nav ul {
 	margin-bottom: 15px;
 	justify-content: center;
 }
+.make-request__small {
+	display: none;
+}
 .make-request:hover {
 	color: #48A357;
 	background: #FFDD00;
@@ -396,6 +399,9 @@ nav ul {
 	font-size: 14px;
 	align-items: center;
 	height: 21px;
+}
+.text-stat.small {
+	display: none;
 }
 .dynamics:hover{
 	text-decoration: none;
@@ -948,7 +954,9 @@ footer {
     .make-request {
     	font-size: 14px;
     	}
-
+    .dynamics img {
+    	display: none;
+    }
 }
 
 
@@ -1033,6 +1041,12 @@ footer {
     		margin-bottom: 10px;
     		height: 32px;
     	}
+    	.make-request__small {
+    		display: block;
+    	}
+    	.make-request__full {
+    		display: none;
+    	}
     	.request {
     		padding-left: 0;
     		text-align: center;
@@ -1047,6 +1061,12 @@ footer {
     	.statistics {
     		display: none;
     		padding: 0 0 0 0;
+    	}
+    	.text-stat {
+    		display: none;
+    	}
+    	.text-stat.small {
+    		display: block;
     	}
 
     	/* subscribe */
