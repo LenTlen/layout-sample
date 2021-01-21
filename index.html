@@ -53,12 +53,7 @@
 
 
 					<nav class="header-nav">
-						<div class="menu-burger">
-							<input id="toggle" type="checkbox" />
-							<label class="menu__btn" for="toggle">
-								<span></span>
-							</label>
-						</div>	
+						<div class="menu-burger"></div>	
 							<ul class="nav-list">
 								<li class="header__item"><a href="#currencies">Курсы</a></li>
 								<li class="header__item"><a href="#subscribe">Следить</a></li>
@@ -75,8 +70,8 @@
 					<div class="currencies-head">
 						<div class="currencies">
 							<div class="currencies-header">Курсы Валют</div>
-							<ul class="currencies-check is-active">
-								<li class="header-btn"><a href="#"><b>Опт</b><br />от 500 $</a></li>
+							<ul class="currencies-check">
+								<li class="header-btn"><a href="#" class="active"><b>Опт</b><br />от 500 $</a></li>
 								<li class="header-btn"><a href="#"><b>Розница</b><br />от 1 $</a></li>
 							</ul>
 						</div>
@@ -89,13 +84,11 @@
 
 
 						<div class="exchange-rate">
-							<div class="currency-container">
 								<a href="#" class="currency">CNY/UAH</a>
-
 								<div class="currency-buy">
 									<div class="price-currency">3.75</div>
 									<div class="price-change"><img src="./img/arrow.svg" alt="" class="arrow">  -0.01</div>
-								</div></div>
+								</div>
 								<div class="currency-sale">
 									<div class="price-sale">4.05</div>
 									<div class="price-change"> </div>
@@ -473,8 +466,16 @@
 			<script type="text/javascript">
 				$(function() {
 					$(".menu-burger").click(function(){
-						$(".menu-burger,.nav-list,.social-networks,.login,.city-item,.container").toggleClass("is-active");
+						$(".menu-burger,.nav-list,.social-networks,.login,.city-item").toggleClass("is-active");
 					});
 					});
+				$(function() {
+					$(".currencies-check a").click(function(e){
+						e.preventDefault();
+						$(".currencies-check .active").removeClass("active");
+						$(this).addClass("active");
+					});
+					});
+
 			</script>
 			</html>
