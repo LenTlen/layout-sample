@@ -361,7 +361,7 @@ nav ul {
 	text-decoration: none;
 	font-weight: 900;
 	font-size: 38px;
-	width: 50%;
+	width: 30%;
 }
 .currency:hover {
 	text-decoration: underline;
@@ -942,7 +942,6 @@ footer {
     	}
     .currency {
     	font-size: 22px;
-    	width: 50%;
     	}
     .price-currency, .price-sale {
     	font-size: 34px;
