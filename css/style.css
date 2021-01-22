@@ -831,6 +831,9 @@ footer {
 .mobile-login{
 	display: none;
 }
+.number-mobile {
+	display: none;
+}
 
 @media only screen and (max-width: 991px){
 	.menu-burger{
@@ -848,9 +851,10 @@ footer {
 		display: block;
 	}
 	
-	 .tel-item, .language, .telegram {
+	 .tel-item, .language {
 		display: none;
 	}
+
 	
 	
 	.login {
@@ -880,15 +884,15 @@ footer {
 	.city-logo {
 		display: none;
 	}
+
 	.header-nav li a {
 		text-transform: none;
 	}
-	 
-
-	
+ 	
 	.header__item {
 		height: 50px;
 		padding-left: 20px;
+		margin-right: 0;
 	}
 	.ln {
 		display: none;
@@ -918,6 +922,10 @@ footer {
 		background: #52B362;
 		padding-left: 20px;
 		z-index: 80;
+		transition-duration: 0.4s;
+	}
+	.city-item option {
+		background: #fff;
 	}
 
 	.nav-list.is-active, .social-networks.is-active, .login.is-active, .city-item.is-active{
@@ -927,6 +935,7 @@ footer {
 	.nav-list.is-active {
 		box-shadow: 0px 4px 200px rgba(0, 0, 0, 0.45);
 	}
+
 
 	.currencies-name {
     	font-size: 11px;
@@ -959,12 +968,10 @@ footer {
 		border-right: 2px solid rgb(251,247,159,0.4); 
     }
 
-
     /* contacts */ 
     .address-head, .number, .worktime {
     	font-size: 20px;
     } 
-
 
 }
 
@@ -992,10 +999,38 @@ footer {
 			height: 36px;
 			width: 90px;
 			top: 0;
-			
 		}
-
-
+		.telegram a {
+			top: 9px;
+		}
+			.btn-tg span {
+		display: none;
+		}
+		.btn-tg img {
+			width: 22px;
+			margin: 0;
+		}
+		.telegram a {
+			width: 40px;
+			height: 40px;
+			justify-content: center;
+			right: 120px;
+		}
+		.number-mobile {
+			position: absolute;
+			display: block;
+			width: 40px;
+			height: 40px;
+			right: 66px;
+			background: linear-gradient(315deg, #FFDD00 11.87%, #F5C832 84.37%), linear-gradient(317.7deg, #52B362 4.29%, #48A357 100%);		border-radius: 62.5px;
+			cursor: pointer;
+			display: flex;
+	    	justify-content: center;
+		}
+		.number-mobile:hover {
+			color: #FFDD00;
+			background-image: 
+		}
 
 
 
@@ -1124,7 +1159,6 @@ footer {
 
 
 
-
     	/* contacts */ 
 
     	.contacts-head span{
@@ -1205,11 +1239,6 @@ footer {
     	.percent {
     		font-size: 42px;
     	}
-
-
-
-
-
 
 
     	/* blog */
