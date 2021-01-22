@@ -326,6 +326,9 @@ nav ul {
 .currencies-name.buy, .currencies-name.sales, .currency-buy, .currency-sale {
 	text-align: left;
 }
+.currencies-name.buy {
+	padding-left: 20px;
+}
 .currencies-name.day {
 	justify-content:  flex-end;
 }
@@ -840,9 +843,7 @@ footer {
 		z-index: 35;
 		cursor: pointer;
 		background-image: url("../img/burger.svg");
-	}
-
-	
+	}	
 	.nav-list li{
 		display: block;
 	}
@@ -850,14 +851,7 @@ footer {
 	 .tel-item, .language, .telegram {
 		display: none;
 	}
-	#toggle {
-  		opacity: 0;
-  		width: 20px;
-  		height: 20px;
-  		cursor: pointer;
-	}
-
-
+	
 	
 	.login {
 		position: fixed;
@@ -882,15 +876,12 @@ footer {
 		overflow: scroll;
 		padding-bottom: 90px;
 		transition-duration: 0.4s;
-
-
 	}
 	.city-logo {
 		display: none;
 	}
 	.header-nav li a {
 		text-transform: none;
-
 	}
 	 
 
@@ -956,6 +947,25 @@ footer {
     .dynamics img {
     	display: none;
     }
+
+
+    /* transfer */ 
+    .cities {
+    	flex-wrap: wrap;
+    }
+    .city {
+    	width: 33.333%;
+    	margin-bottom: 10px;
+		border-right: 2px solid rgb(251,247,159,0.4); 
+    }
+
+
+    /* contacts */ 
+    .address-head, .number, .worktime {
+    	font-size: 20px;
+    } 
+
+
 }
 
 
@@ -1016,10 +1026,20 @@ footer {
     	.currencies-name {
     		font-size: 9px;
     	}
+    	.currencies-name.buy {
+    		padding-left: 16px;
+    	}
+    	.sales {
+    		padding-left: 0;
+    	}
+    	.day {
+    		padding-right: 16px;
+    	}
     	.exchange-rate {
     		flex-wrap: wrap;
     		height: 93px;
-    		padding-top: 8px
+    		justify-content: stretch;
+    		padding: 10px 15px;
     	}
     	.currency {
 	   		font-size: 16px;
@@ -1027,13 +1047,19 @@ footer {
 	   		line-height: 22px;
     		width: 100%;
     	}
-
+    	.currency-buy, .currency-sale {
+    		width: 33%;
+    		margin-left: 0;
+    	}
     	.price-currency, .price-sale {
     		font-size: 28px;
     	}
     	.price-change {
     		font-size: 12px;
     		height: 14px;
+    	}
+    	.arrow {
+    		height: 13px;
     	}
     	.make-request {
     		font-size: 11px;
@@ -1049,10 +1075,10 @@ footer {
     	.request {
     		padding-left: 0;
     		text-align: center;
-    		width: 30%;
+    		width: 33%;
     		position: relative;
     		top: -10px;
-    		padding-left: 16px;
+    		padding-left: 26px;
     	}
     	.dynamics  {
     		font-size: 12px;
@@ -1072,6 +1098,7 @@ footer {
 
     	.subscribe-head {
     		font-size: 20px;
+    		margin-bottom: 30px;
     	}
     	.subscribe-content-list {
     		display: block;
@@ -1083,11 +1110,18 @@ footer {
     		text-align: center;
     	}
     	.subscribe-right {
-    		size: 50%;
+    		margin-top: 10px;
     	}
     	.subscribe-img {
     		max-width: 150px;
     	}
+
+    	/* transfer */
+    	.city {
+    	width: 50%;
+		border-bottom: 2px solid rgb(251,247,159,0.4); 
+        }
+
 
 
 
@@ -1110,10 +1144,41 @@ footer {
     		width: 60%;
     		text-align: left;
     		font-size: 14px;
+    		line-height: 20px;
     	}
     	.show-map {
     		font-size: 12px;
     	}
+    	.country {
+   		 	width: 100%;
+   		 	border-left: 0;
+    		border-bottom: 2px solid rgb(251,247,159,0.4);
+    		padding-bottom: 10px;
+    		margin-bottom: 10px;
+		}
+		.country:last-child {
+    		border: 0;
+		}
+		.percent, .country-name {
+			text-align: left;
+		}
+		.country-img {
+    		margin-right: 20px;
+		    position: absolute;
+    		right: 0;
+		}
+
+    	.onmap {
+    		position: absolute;
+    		right: 20px;
+    		display: block;
+    	}
+    	.map {
+    		display: block;
+    		margin: 0 auto 5px;
+    		height: 36px;
+    	}
+
 
     	.countries, .cities {
     		flex-wrap: wrap;
