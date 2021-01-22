@@ -304,7 +304,7 @@ nav ul {
 .header-btn>a.active {
 	background: #fff;
 	color: #48A357;
-
+	box-shadow: 0px 2.75px 2.75px rgba(0, 0, 0, 0.25);
 }
 
 .table-header {
@@ -1151,12 +1151,7 @@ footer {
     		max-width: 150px;
     	}
 
-    	/* transfer */
-    	.city {
-    	width: 50%;
-		border-bottom: 2px solid rgb(251,247,159,0.4); 
-        }
-
+    
 
 
     	/* contacts */ 
@@ -1180,6 +1175,23 @@ footer {
     		font-size: 14px;
     		line-height: 20px;
     	}
+
+    		/* transfer */
+    	.city {
+    		width: 50%;
+			border: 0;
+			margin-bottom: 0;
+        }
+        .city:last-child {
+        	border: 0;
+        }
+        .city:nth-child(2n+1) {
+        	border-right: 2px solid rgb(251,247,159,0.4); 
+        }
+        .city:nth-child(-n+4) {
+        	border-bottom: 2px solid rgb(251,247,159,0.4);
+        }
+
     	.show-map {
     		font-size: 12px;
     	}
@@ -1189,15 +1201,19 @@ footer {
     		border-bottom: 2px solid rgb(251,247,159,0.4);
     		padding-bottom: 10px;
     		margin-bottom: 10px;
+    		line-height: 25px;
 		}
 		.country:last-child {
     		border: 0;
+		}
+		.percent {
+			line-height: 57px;
 		}
 		.percent, .country-name {
 			text-align: left;
 		}
 		.country-img {
-    		margin-right: 20px;
+    		margin-right: 30px;
 		    position: absolute;
     		right: 0;
 		}
@@ -1221,7 +1237,6 @@ footer {
     	.city {
     		flex-wrap: wrap;
     		width: 50%;
-    		margin-bottom: 10px;
     	}
     	.percent2 {
     		font-size: 42px;
