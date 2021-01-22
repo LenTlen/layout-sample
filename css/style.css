@@ -360,11 +360,14 @@ nav ul {
     margin-right: 10px;
 }
 .currency {
-	color: #FFDD00;
-	text-decoration: none;
 	font-weight: 900;
-	font-size: 38px;
 	width: 30%;
+}
+.currency a {
+	text-decoration: none;
+	color: #FFDD00;
+	font-size: 38px;
+	max-width: 188px;
 }
 .currency:hover {
 	text-decoration: underline;
@@ -846,7 +849,7 @@ footer {
 		z-index: 35;
 		cursor: pointer;
 		background-image: url("../img/burger.svg");
-	}	
+	}
 	.nav-list li{
 		display: block;
 	}
@@ -940,7 +943,7 @@ footer {
 	.currencies-name {
     	font-size: 11px;
     	}
-    .currency {
+    .currency a{
     	font-size: 22px;
     	}
     .price-currency, .price-sale {
@@ -1077,10 +1080,13 @@ footer {
     		padding: 10px 15px;
     	}
     	.currency {
-	   		font-size: 16px;
 	   		display: block;
 	   		line-height: 22px;
     		width: 100%;
+    	}
+    	.currency a {
+    		font-size: 16px;
+    		width: 80px;
     	}
     	.currency-buy, .currency-sale {
     		width: 33%;
@@ -1130,9 +1136,12 @@ footer {
     	}
 
     	/* subscribe */
-
+    	.subscribe {
+    		padding-top: 50px;
+    	}
     	.subscribe-head {
     		font-size: 20px;
+    		width: 80%;
     		margin-bottom: 30px;
     	}
     	.subscribe-content-list {
@@ -1156,6 +1165,17 @@ footer {
 
     	/* contacts */ 
 
+    	.contacts {
+    		padding: 40px 0px;
+
+    	}
+    	.transfer h2 {
+    		font-size: 20px;
+    	}
+    	.transfer h3 {
+    		font-size: 18px;
+    		margin-bottom: 20px;
+    	}
     	.contacts-head span{
     		font-size: 20px;
     	}
@@ -1177,6 +1197,9 @@ footer {
     	}
 
     		/* transfer */
+    	.transfer-content {
+    		padding: 40px 10px; 
+    	}
     	.city {
     		width: 50%;
 			border: 0;
@@ -1299,4 +1322,9 @@ footer {
 		.wrapper, .content, .content, .subscribe-content, .transfer-content, .contacts-content, .blog-content, .recommend-content, .footer-content {
 			max-width: 750px;
 		}
+}
+@media screen and (max-width: 991px) and (min-width: 860px) {
+	.menu-burger {
+		right: -40px;
+	}	
 }
