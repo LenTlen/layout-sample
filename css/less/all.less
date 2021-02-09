@@ -10,16 +10,22 @@ body {
 	background: #48A357;
 }
 /* header */
-.header__content {
-	height: 90px;	
-	justify-content: space-between;
-	display: flex;
-	position: relative;
-}
 .header__content, .content, .subscribe__content, .footer__content {
 	max-width: 1128px;
 	padding: 0 10px;
 	margin: 0 auto;
+}
+.h1, h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+.h2 {
+	font-size: 48px;
+}
+.h3 {
+	font-size: 28px;
 }
 
 .header {
@@ -30,19 +36,29 @@ body {
 	width: 100%;
 	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
 	z-index: 1;
-
+	&__content {
+		height: 90px;	
+		justify-content: space-between;
+		display: flex;
+		position: relative;
+	}
 	&__left {
 		height: 100%;
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
+		&-wrapper {
+				display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		}
 	}
 	&__right {
 		text-align: right;
 	}
 }
 
-.header__left-wrapper, .login {
+.login {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -52,12 +68,10 @@ body {
 	margin-left: auto;
 	margin: 0;
 }
-
 .header__logo {
 	top: 15px;
 	margin-right: 24px;
 }
-
 .navigation, .login {
 	display: flex;
 	flex-wrap: wrap;
@@ -122,7 +136,6 @@ body {
 		}
 	}
 }
-
 .navigation {
 	margin-top: 12px;
 	
@@ -368,8 +381,7 @@ nav {
 .currencies__header {
 	display: flex;
 	justify-content: space-between;
-	.h1 {
-		font-size: 48px;
+	.h2 {
 		color: #FBF79F; 
 		padding-bottom: 38px;
 	}
@@ -616,7 +628,6 @@ nav {
 .transfer {
 	display: block;	
 	.h3 {
-		font-size: 28px;
 		color: #FBF79F;
 		margin-bottom: 6px;
 		span {
@@ -638,12 +649,11 @@ nav {
 			color: #FFDD00;
 		}
 	}
-}
-.h2 {
-	font-size: 48px;
-	color: #FBF79F;
-	margin-bottom: 30px;
-	margin-top: 0;
+	.h2 {
+		color: #FBF79F;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
 }
 
 .country, .city {
@@ -859,6 +869,7 @@ nav {
 			position: relative;
 			line-height: 22px;
 			a {
+				display: inline-block;
 				text-decoration: none;
 				color: #545454;
 				&:hover {
@@ -869,6 +880,9 @@ nav {
 					height: 66px;
 					overflow: hidden;
 					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-line-clamp: 3;
+    				-webkit-box-orient: vertical;
 				}
 				.post-gray {
 				    color: #8D8D8D;
@@ -876,6 +890,9 @@ nav {
 				    overflow: hidden;
 				    padding-top: 20px;
 				    position: relative;
+				    display: -webkit-box;
+					-webkit-line-clamp: 2;
+    				-webkit-box-orient: vertical;
 				    &::before {
 					    content: '';
 					    position: absolute;
@@ -914,6 +931,9 @@ nav {
 	&__text {
 		font-size: 14px;
 		line-height: 19px;
+		p {
+			margin-bottom: 27px;
+		}
 	}
 }
 /* reccomend end */
@@ -965,6 +985,28 @@ footer {
 	}
 }
 /* footer end */
+
+#back-top {
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	right: 125px;
+	bottom: 200px;
+	background: rgba(0,0,0,0.2);
+	font-size: 40px;
+	color: #fff;
+	border-radius: 50%;
+	display: none;
+	border: none;
+	justify-content: center;
+	padding-top: 10px;
+	&:hover {
+		background: #48A357;
+	}
+	&:focus {
+		outline: none;
+	}
+}
 
 .menu-burger {
 	display: none;
@@ -1115,8 +1157,11 @@ footer {
 			border-right: 2px solid rgba(251,247,159,0.4); 
 	    }
     }
+    .country, .city {
+    	margin-bottom: 30px;
+    }
     .transfer__online {
-    	width: 99%;
+    	width: 100%;
     }
 
     /* contacts */ 
@@ -1143,12 +1188,22 @@ footer {
     		}
     	}
     }
+    #back-top {
+    	right: 90px;
+    	bottom: 90px;
+    }
 }
 
 @media screen and (max-width: 767px){
 		.header__content, .content, .footer__content {
 			max-width: 550px;
 		}
+		.h2 {
+    		font-size: 20px;
+    	}
+    	.h3 {
+    		font-size: 20px;
+    	}	
 		/* head */
 		.btn-tg .text {
 		display: none;
@@ -1327,11 +1382,8 @@ footer {
     	.contacts {
     		padding: 40px 0px;
     	}
-    	.h2 {
-    		font-size: 20px;
-    	}
+
 		.transfer .h3 {
-    		font-size: 18px;
     		margin-bottom: 20px;
     		span {
     			display: block;
@@ -1350,7 +1402,7 @@ footer {
     			display: block;
     		}
     	}
-    	.address-big {
+    	.contact__row-address .address-big {
     		font-size: 16px;
     		width: 100%;
     	}
@@ -1470,7 +1522,7 @@ footer {
 	    	&__row {
 	    		display: block;
 	    		&-post {
-		    		width: 99%;
+		    		width: 100%;
 		    		margin-bottom: 10px;
 		    		padding-bottom: 15px;
 		    	}
@@ -1481,5 +1533,9 @@ footer {
     		&__header {
     			font-size: 20px;
     		}
+    	}
+    	#back-top {
+    		right: 30px;
+    		bottom: 30px;
     	}
 }
